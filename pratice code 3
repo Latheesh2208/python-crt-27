@@ -1,0 +1,13 @@
+def name(n):
+    out=0
+    a=n
+    while n>0:
+        rem=n%10
+        out=out*10+rem
+        n=n//10
+    if a==out:
+       return("plaindrone number")
+    else:
+        return("not a plaindrone number")
+n=int(input("Enter the number:"))
+print(name(n))
